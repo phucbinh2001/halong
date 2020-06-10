@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+    float: left;
+}
+
+span {
+    color: #095df7;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.boxcenter, .boxcenter1 {
+    width: 1024px;
+    margin: auto;
+}
+
+.boxcenter1 {
+    height: 650px;
+}
+
+h2 {
+    font-size: 35pt;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 18pt;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+h3::after {
+    content: "";
+    position: absolute;
+    border: 2px solid #095df7;
+    width: 25%;
+    left: 0;
+    bottom: -1px;
+    z-index: -1;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 60px;
+}
+
+.banner .boxcenter1{
+    background-image: url('../images/banner.gif');
+    color: #fff;
+    padding-top: 120px;
+    background-repeat: no-repeat;
+    padding-left: 5%;
+}
+
+.banner h2 {
+    font-size: 40pt;
+}
+
+.banner h1 {
+    font-size: 60pt;
+}
+
+.banner .boxcenter1 {
+    height: 540px;
+}
+
+.dao h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin: 30px 0;
+}
+
+.dao .boxcenter1 {
+    background-image: url('../images/bg1.gif');
+    background-repeat: no-repeat;
+    height: 540px;
+}
+
+.dao img {
+    box-shadow: 1px 1px 8px #999;
+}
+
+.dao_content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.dao_info {
+    width: 780px;
+    height: 270px;
+    background-color: #fff;
+    padding: 50px;
+    border-left: 5px solid steelblue;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 1px 1px 8px #999;
+}
+
+.dao_info, .dao_img {
+    width: 460px;
+}
+
+.dao_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.dao_box {
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thanhdot {
+    display: flex;
+    float: left;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(125, 125, 125, .5);
+}
+
+.vuichoi {
+    text-align: center;
+}
+
+.vuichoi h2 {
+    font-size: 30pt;
+}
+
+.vuichoi p {
+    width: 60%;
+    margin: 20px auto 30px;
+}
+
+.vuichoi .box-img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.vuichoi .box-img .item {
+    flex-basis: 280px;
+    height: 350px;
+    background-size: cover;
+}
+
+.vuichoi .box-img .item:nth-child(1) {
+    background-image: url('../images/dong-thien-cung-9.png');
+}
+
+.vuichoi .box-img .item:nth-child(2) {
+    background-image: url('../images/caukoi2.jpg');
+}
+
+.vuichoi .box-img .item:nth-child(3) {
+    background-image: url('../images/ha-long-park-04.png');
+    background-position: center;
+}
+
+.vuichoi .boxcenter1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.amthuc .boxcenter1 {
+    display: flex;
+    background-image: url('../images/bg2.gif');
+}
+
+.amthuc .boxleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.amthuc h2 {
+    text-align: left;
+    width: 60%;
+    margin-bottom: 40px;
+}
+
+.amthuc p {
+    width: 60%;
+}
+
+.amthuc .boxleft, .amthuc .boxright {
+    width: 50%;
+}
+
+.amthuc .boxright {
+    padding: 12% 4%;
+}
+
+.amthuc img {
+    width: 182px;
+    height: 182px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.langchai .boxcenter1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.langchai h2 {
+    text-align: center;
+}
+
+.langchai p {
+    width: 60%;
+    margin: 20px;
+    text-align: center;
+}
+
+.langchai .slide {
+    position: relative;
+}
+
+.langchai img {
+    width: 480px;
+    height: 320px;
+    position: absolute;
+}
+
+.langchai img:first-child {
+    left: 0;
+    transform: scale(0.8);
+    opacity: .5;
+}
+
+.langchai img:nth-child(2) {
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.langchai img:last-child {
+    right: 0;
+    transform: scale(0.8);
+    opacity: .5;
+}
+
+.langchai .thanhdot {
+    position: absolute; 
+    bottom: 0;
+}
+
+.review h2 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.review .boxcenter1 {
+    background-image: url('../images/bg3.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.review .review_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review_content .item {
+    padding: 0 20px;
+    width: 300px;
+    height: 217px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #999;
+    position: relative;
+    text-align: center;
+}
+
+.review_content img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.user_name {
+    font-size: 16pt;
+    font-weight: 600;
+    margin-top: 25%;
+    margin-bottom: 10px;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #999999;
+    text-align: center;
+
+}
+
+footer .boxcenter {
+    border-top: 1px solid #efefef;
+}
+
+.start {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 22%;
+}
+
+.start i{
+    color: #f1c40f;
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .boxcenter1 {
+        width: 100%;
+    }
+
+    .dao_info {
+        top: 30px;
+    }
+
+    .vuichoi .box-img {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .vuichoi .box-img .item {
+        flex-basis: 30%;
+    }
+
+    .amthuc .boxleft {
+        width: 48%;
+    }
+
+    .amthuc .boxright {
+        padding: 18% 0;
+    }
+
+    .amthuc img {
+        width: 45%;
+        margin: 0;
+    }
+
+    .amthuc img{
+        margin: 5px;
+    }
+
+    .review_content .item {
+        width: 32%;
+    }
+
+    .langchai img {
+        width: 400px;
+        height: 280px;
+    }
+
+    .langchai .thanhdot {
+        bottom: 50px;
+        margin: 0;
+    }
+
+    footer .boxcenter {
+        width: 100%;
+    }
+
+    .user_name {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .dao .boxcenter1 {
+        background-image: url('../images/dao1.jpg');
+        background-position: center;
+        background-size: cover;
+        height: fit-content;
+    }
+    .dao_content {
+        width: 100%;
+        position: relative;
+        height: 300px;
+    }
+
+    .dao_info {
+        width: 90%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .dao_img {
+        display: none;
+    }
+
+    .dao_box {
+        height: 400px;
+    }
+
+    .dot {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .vuichoi .box-img {
+        flex-direction: column;
+        height: 300px;
+        
+    }
+
+    .vuichoi .box-img .item {
+        flex-basis: 100%;
+    }
+
+    .amthuc .boxcenter1{
+        flex-direction: column;
+        height: auto;
+        background-size: cover;
+    }
+
+    .amthuc .boxright {
+        width: 80%;
+        margin: auto;
+    }
+
+    .amthuc img {
+        width: 135px;
+        height: 135px;
+        float: left;
+    }
+
+    .amthuc .boxleft {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .langchai .boxcenter1 {
+        height: auto;
+        padding-top: 40px;
+    }
+
+    .langchai img:nth-child(2n-1) {
+        display: none;
+    }
+
+    .langchai img {
+        position: unset;
+        width: 100%;
+        transform: translateX(0) !important;
+    }
+
+    .langchai .thanhdot {
+        z-index: 99;
+        bottom: 20px;
+    }
+
+    .review_content .item {
+        display: none;
+    }
+
+    .review_content .item:nth-child(1) {
+        display: block;
+        width: 100%;
+    }
+}
